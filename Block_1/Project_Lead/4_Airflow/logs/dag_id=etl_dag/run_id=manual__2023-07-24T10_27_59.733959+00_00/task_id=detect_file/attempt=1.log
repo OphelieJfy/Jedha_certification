@@ -1,0 +1,24 @@
+[2023-07-24 10:28:05,702] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.detect_file manual__2023-07-24T10:27:59.733959+00:00 [queued]>
+[2023-07-24 10:28:05,751] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.detect_file manual__2023-07-24T10:27:59.733959+00:00 [queued]>
+[2023-07-24 10:28:05,752] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 10:28:05,760] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 10:28:05,762] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 10:28:05,835] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): detect_file> on 2023-07-24 10:27:59.733959+00:00
+[2023-07-24 10:28:05,864] {standard_task_runner.py:52} INFO - Started process 1446 to run task
+[2023-07-24 10:28:05,898] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'detect_file', 'manual__2023-07-24T10:27:59.733959+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpkvtrpi3x', '--error-file', '/tmp/tmps9utyouj']
+[2023-07-24 10:28:05,904] {standard_task_runner.py:80} INFO - Job 28: Subtask detect_file
+[2023-07-24 10:28:06,280] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.detect_file manual__2023-07-24T10:27:59.733959+00:00 [running]> on host c03236539c84
+[2023-07-24 10:28:06,608] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=detect_file
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T10:27:59.733959+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-24T10:27:59.733959+00:00
+[2023-07-24 10:28:06,614] {python.py:66} INFO - Poking callable: <function _detect_file at 0x7f539ef36560>
+[2023-07-24 10:28:06,659] {base.py:301} INFO - Success criteria met. Exiting.
+[2023-07-24 10:28:06,709] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=detect_file, execution_date=20230724T102759, start_date=20230724T102805, end_date=20230724T102806
+[2023-07-24 10:28:06,808] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-24 10:28:07,001] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

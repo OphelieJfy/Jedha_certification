@@ -1,0 +1,88 @@
+[2023-07-24 12:11:34,935] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.transfer_data_to_postgres manual__2023-07-24T12:11:10.533092+00:00 [queued]>
+[2023-07-24 12:11:34,988] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.transfer_data_to_postgres manual__2023-07-24T12:11:10.533092+00:00 [queued]>
+[2023-07-24 12:11:34,989] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 12:11:34,991] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 12:11:34,994] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 12:11:35,053] {taskinstance.py:1377} INFO - Executing <Task(S3ToPostgresOperator): transfer_data_to_postgres> on 2023-07-24 12:11:10.533092+00:00
+[2023-07-24 12:11:35,077] {standard_task_runner.py:52} INFO - Started process 4813 to run task
+[2023-07-24 12:11:35,127] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transfer_data_to_postgres', 'manual__2023-07-24T12:11:10.533092+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpqt211e1_', '--error-file', '/tmp/tmp8ktmwfgb']
+[2023-07-24 12:11:35,145] {standard_task_runner.py:80} INFO - Job 77: Subtask transfer_data_to_postgres
+[2023-07-24 12:11:35,484] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.transfer_data_to_postgres manual__2023-07-24T12:11:10.533092+00:00 [running]> on host c03236539c84
+[2023-07-24 12:11:35,991] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=transfer_data_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T12:11:10.533092+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-24T12:11:10.533092+00:00
+[2023-07-24 12:11:35,998] {s3.py:861} INFO - Downloading source S3 file from Bucket lead-project-bucket-ojo with path Real_time_payments_1690187507.8259003.csv
+[2023-07-24 12:11:36,073] {base.py:68} INFO - Using connection ID 'aws_default' for task execution.
+[2023-07-24 12:11:36,076] {base_aws.py:206} INFO - Credentials retrieved from login
+[2023-07-24 12:11:38,308] {base.py:68} INFO - Using connection ID 'postgres://cazwrmravtstuq:***@ec2-54-234-13-16.compute-1.amazonaws.com:5432/d7ojfso4s2fmat' for task execution.
+[2023-07-24 12:11:41,758] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: table "real_time_data" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/s3toPostgres.py", line 42, in execute
+    df_file.to_sql(self.table, engine, if_exists="replace", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1810, in drop_table
+    self.get_table(table_name, schema).drop()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 960, in drop
+    bind._run_ddl_visitor(ddl.SchemaDropper, self, checkfirst=checkfirst)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3008, in _run_ddl_visitor
+    conn._run_ddl_visitor(visitorcallable, element, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2016, in _run_ddl_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/visitors.py", line 483, in traverse_single
+    return meth(obj, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/ddl.py", line 1097, in visit_table
+    self.connection.execute(DropTable(table))
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1200, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/ddl.py", line 78, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1296, in _execute_ddl
+    compiled,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1749, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1930, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) table "real_time_data" does not exist
+
+[SQL: 
+DROP TABLE real_time_data]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+[2023-07-24 12:11:41,843] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_dag, task_id=transfer_data_to_postgres, execution_date=20230724T121110, start_date=20230724T121134, end_date=20230724T121141
+[2023-07-24 12:11:41,925] {standard_task_runner.py:97} ERROR - Failed to execute job 77 for task transfer_data_to_postgres ((psycopg2.errors.UndefinedTable) table "real_time_data" does not exist
+
+[SQL: 
+DROP TABLE real_time_data]
+(Background on this error at: http://sqlalche.me/e/14/f405); 4813)
+[2023-07-24 12:11:42,010] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-24 12:11:42,452] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

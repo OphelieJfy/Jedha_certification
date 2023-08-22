@@ -1,0 +1,66 @@
+[2023-07-24 11:26:19,539] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data scheduled__2023-07-24T10:00:00+00:00 [queued]>
+[2023-07-24 11:26:19,648] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data scheduled__2023-07-24T10:00:00+00:00 [queued]>
+[2023-07-24 11:26:19,653] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 11:26:19,655] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 11:26:19,657] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 11:26:19,949] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): fetch_data> on 2023-07-24 10:00:00+00:00
+[2023-07-24 11:26:20,063] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'fetch_data', 'scheduled__2023-07-24T10:00:00+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpm4zpxgsj', '--error-file', '/tmp/tmpq413imvn']
+[2023-07-24 11:26:20,026] {standard_task_runner.py:52} INFO - Started process 3450 to run task
+[2023-07-24 11:26:20,089] {standard_task_runner.py:80} INFO - Job 41: Subtask fetch_data
+[2023-07-24 11:26:20,397] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.fetch_data scheduled__2023-07-24T10:00:00+00:00 [running]> on host c03236539c84
+[2023-07-24 11:26:21,326] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-24T10:00:00+00:00
+[2023-07-24 11:26:21,730] {base.py:68} INFO - Using connection ID 'aws_default' for task execution.
+[2023-07-24 11:26:21,740] {base_aws.py:206} INFO - Credentials retrieved from login
+[2023-07-24 11:26:31,578] {etl_dag.py:65} INFO - Saved real time data data to Real_time_payments_1690187507.8259003.csv
+[2023-07-24 11:26:31,852] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-24 11:26:32,422] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=fetch_data, execution_date=20230724T100000, start_date=20230724T112619, end_date=20230724T112632
+[2023-07-24 11:26:33,513] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-24 11:26:35,501] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-07-24 11:27:53,130] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data scheduled__2023-07-24T10:00:00+00:00 [queued]>
+[2023-07-24 11:27:53,550] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data scheduled__2023-07-24T10:00:00+00:00 [queued]>
+[2023-07-24 11:27:53,558] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 11:27:53,561] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 11:27:53,562] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 11:27:53,880] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): fetch_data> on 2023-07-24 10:00:00+00:00
+[2023-07-24 11:27:53,976] {standard_task_runner.py:52} INFO - Started process 3517 to run task
+[2023-07-24 11:27:54,061] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'fetch_data', 'scheduled__2023-07-24T10:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp8tlk8nbu', '--error-file', '/tmp/tmp2shws2oa']
+[2023-07-24 11:27:54,080] {standard_task_runner.py:80} INFO - Job 48: Subtask fetch_data
+[2023-07-24 11:27:54,843] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.fetch_data scheduled__2023-07-24T10:00:00+00:00 [running]> on host c03236539c84
+[2023-07-24 11:27:55,854] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-24T10:00:00+00:00
+[2023-07-24 11:27:56,556] {base.py:68} INFO - Using connection ID 'aws_default' for task execution.
+[2023-07-24 11:27:56,573] {base_aws.py:206} INFO - Credentials retrieved from login
+[2023-07-24 11:28:02,606] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_dag.py", line 62, in _fetch_data_upload_S3
+    s3_hook.load_file(filename=data_logs_filename, key=filename, bucket_name=Variable.get("S3BucketName"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 63, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 91, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 600, in load_file
+    raise ValueError(f"The key {key} already exists.")
+ValueError: The key Real_time_payments_1690187507.8259003.csv already exists.
+[2023-07-24 11:28:02,718] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_dag, task_id=fetch_data, execution_date=20230724T100000, start_date=20230724T112753, end_date=20230724T112802
+[2023-07-24 11:28:02,925] {standard_task_runner.py:97} ERROR - Failed to execute job 48 for task fetch_data (The key Real_time_payments_1690187507.8259003.csv already exists.; 3517)
+[2023-07-24 11:28:03,132] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-24 11:28:03,794] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

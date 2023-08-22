@@ -1,0 +1,18 @@
+fastapi 
+uvicorn[standard]
+pydantic 
+typing 
+pandas 
+gunicorn 
+openpyxl 
+mlflow 
+boto3 
+scikit-learn
+python-multipart
+fsspec
+s3fs
+streamlit >= 1.10.0
+requests
+botocore
+matplotlib
+seaborn

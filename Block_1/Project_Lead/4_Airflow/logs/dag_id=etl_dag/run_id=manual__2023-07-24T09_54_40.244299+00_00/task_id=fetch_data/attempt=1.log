@@ -1,0 +1,75 @@
+[2023-07-24 09:55:01,228] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data manual__2023-07-24T09:54:40.244299+00:00 [queued]>
+[2023-07-24 09:55:01,354] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data manual__2023-07-24T09:54:40.244299+00:00 [queued]>
+[2023-07-24 09:55:01,359] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 09:55:01,364] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 09:55:01,366] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 09:55:01,674] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): fetch_data> on 2023-07-24 09:54:40.244299+00:00
+[2023-07-24 09:55:01,728] {standard_task_runner.py:52} INFO - Started process 359 to run task
+[2023-07-24 09:55:01,772] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'fetch_data', 'manual__2023-07-24T09:54:40.244299+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpw6_ydc49', '--error-file', '/tmp/tmp37xdojnf']
+[2023-07-24 09:55:01,779] {standard_task_runner.py:80} INFO - Job 11: Subtask fetch_data
+[2023-07-24 09:55:02,066] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.fetch_data manual__2023-07-24T09:54:40.244299+00:00 [running]> on host c03236539c84
+[2023-07-24 09:55:02,620] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T09:54:40.244299+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-24T09:54:40.244299+00:00
+[2023-07-24 09:55:04,292] {base_aws.py:447} WARNING - Unable to use Airflow Connection for credentials.
+[2023-07-24 09:55:27,747] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_dag.py", line 63, in _fetch_data_upload_S3
+    s3_hook.load_file(filename=file, key=filename, bucket_name=Variable.get("S3BucketName"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 63, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 91, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 599, in load_file
+    if not replace and self.check_for_key(key, bucket_name):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 63, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 91, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 442, in check_for_key
+    obj = self.head_object(key, bucket_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 63, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 91, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 424, in head_object
+    return self.get_conn().head_object(Bucket=bucket_name, Key=key)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 508, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 899, in _make_api_call
+    operation_model, request_dict, request_context
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 921, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 198, in _send_request
+    request = self.create_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 137, in create_request
+    operation_name=operation_model.name,
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/signers.py", line 103, in handler
+    return self.sign(operation_name, request)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/signers.py", line 187, in sign
+    auth.add_auth(request)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/auth.py", line 407, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+[2023-07-24 09:55:28,217] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_dag, task_id=fetch_data, execution_date=20230724T095440, start_date=20230724T095501, end_date=20230724T095528
+[2023-07-24 09:55:28,684] {standard_task_runner.py:97} ERROR - Failed to execute job 11 for task fetch_data (Unable to locate credentials; 359)
+[2023-07-24 09:55:29,001] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-24 09:55:29,756] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

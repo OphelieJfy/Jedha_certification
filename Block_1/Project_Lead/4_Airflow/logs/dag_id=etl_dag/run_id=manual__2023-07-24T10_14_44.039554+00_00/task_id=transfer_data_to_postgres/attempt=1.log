@@ -1,0 +1,26 @@
+[2023-07-24 10:14:58,041] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.transfer_data_to_postgres manual__2023-07-24T10:14:44.039554+00:00 [queued]>
+[2023-07-24 10:14:58,088] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.transfer_data_to_postgres manual__2023-07-24T10:14:44.039554+00:00 [queued]>
+[2023-07-24 10:14:58,090] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 10:14:58,091] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 10:14:58,092] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 10:14:58,138] {taskinstance.py:1377} INFO - Executing <Task(S3ToPostgresOperator): transfer_data_to_postgres> on 2023-07-24 10:14:44.039554+00:00
+[2023-07-24 10:14:58,163] {standard_task_runner.py:52} INFO - Started process 1029 to run task
+[2023-07-24 10:14:58,184] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transfer_data_to_postgres', 'manual__2023-07-24T10:14:44.039554+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp5fvjep4m', '--error-file', '/tmp/tmpe5_z8ibn']
+[2023-07-24 10:14:58,189] {standard_task_runner.py:80} INFO - Job 25: Subtask transfer_data_to_postgres
+[2023-07-24 10:14:58,452] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.transfer_data_to_postgres manual__2023-07-24T10:14:44.039554+00:00 [running]> on host c03236539c84
+[2023-07-24 10:14:58,818] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=transfer_data_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T10:14:44.039554+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-24T10:14:44.039554+00:00
+[2023-07-24 10:14:58,824] {s3.py:861} INFO - Downloading source S3 file from Bucket lead-project-bucket-ojo with path Real_time_payments_1690187507.8259003.csv
+[2023-07-24 10:14:58,893] {base.py:68} INFO - Using connection ID 'aws_default' for task execution.
+[2023-07-24 10:14:58,895] {base_aws.py:206} INFO - Credentials retrieved from login
+[2023-07-24 10:15:01,163] {base.py:68} INFO - Using connection ID 'postgres://cazwrmravtstuq:***@ec2-54-234-13-16.compute-1.amazonaws.com:5432/d7ojfso4s2fmat' for task execution.
+[2023-07-24 10:15:05,383] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=transfer_data_to_postgres, execution_date=20230724T101444, start_date=20230724T101458, end_date=20230724T101505
+[2023-07-24 10:15:05,636] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-24 10:15:05,822] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

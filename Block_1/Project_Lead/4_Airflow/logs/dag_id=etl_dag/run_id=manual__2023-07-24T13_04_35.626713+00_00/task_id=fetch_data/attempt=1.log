@@ -1,0 +1,26 @@
+[2023-07-24 13:05:04,188] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data manual__2023-07-24T13:04:35.626713+00:00 [queued]>
+[2023-07-24 13:05:04,282] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_dag.fetch_data manual__2023-07-24T13:04:35.626713+00:00 [queued]>
+[2023-07-24 13:05:04,283] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 13:05:04,284] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-07-24 13:05:04,285] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-24 13:05:04,395] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): fetch_data> on 2023-07-24 13:04:35.626713+00:00
+[2023-07-24 13:05:04,478] {standard_task_runner.py:52} INFO - Started process 229 to run task
+[2023-07-24 13:05:04,575] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'fetch_data', 'manual__2023-07-24T13:04:35.626713+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpdoroig5l', '--error-file', '/tmp/tmprbd2ph43']
+[2023-07-24 13:05:04,594] {standard_task_runner.py:80} INFO - Job 100: Subtask fetch_data
+[2023-07-24 13:05:05,194] {task_command.py:370} INFO - Running <TaskInstance: etl_dag.fetch_data manual__2023-07-24T13:04:35.626713+00:00 [running]> on host 58d73bc824ec
+[2023-07-24 13:05:05,901] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-24T13:04:35.626713+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-24T13:04:35.626713+00:00
+[2023-07-24 13:05:06,056] {base.py:68} INFO - Using connection ID 'aws_default' for task execution.
+[2023-07-24 13:05:06,057] {base_aws.py:206} INFO - Credentials retrieved from login
+[2023-07-24 13:05:12,268] {etl_dag.py:65} INFO - Saved real time data data to Real_time_payments_1690201757.765383.csv
+[2023-07-24 13:05:12,278] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-24 13:05:12,338] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=fetch_data, execution_date=20230724T130435, start_date=20230724T130504, end_date=20230724T130512
+[2023-07-24 13:05:12,424] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-24 13:05:12,554] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

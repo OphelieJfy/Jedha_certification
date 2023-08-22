@@ -1,0 +1,392 @@
+[2023-07-24 09:00:09,140] {processor.py:153} INFO - Started process (PID=82) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:00:09,153] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:00:09,279] {logging_mixin.py:115} INFO - [2023-07-24 09:00:09,278] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:00:31,081] {logging_mixin.py:115} INFO - [2023-07-24 09:00:31,004] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:00:31,084] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:00:31,803] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 22.756 seconds
+[2023-07-24 09:01:03,689] {processor.py:153} INFO - Started process (PID=106) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:01:03,710] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:01:03,747] {logging_mixin.py:115} INFO - [2023-07-24 09:01:03,746] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:01:15,345] {logging_mixin.py:115} INFO - [2023-07-24 09:01:15,255] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:01:15,347] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:01:15,753] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 12.151 seconds
+[2023-07-24 09:01:46,353] {processor.py:153} INFO - Started process (PID=128) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:01:46,359] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:01:46,365] {logging_mixin.py:115} INFO - [2023-07-24 09:01:46,364] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:01:47,658] {logging_mixin.py:115} INFO - [2023-07-24 09:01:47,649] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:01:47,660] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:01:47,745] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.403 seconds
+[2023-07-24 09:02:17,945] {processor.py:153} INFO - Started process (PID=159) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:02:17,951] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:02:17,965] {logging_mixin.py:115} INFO - [2023-07-24 09:02:17,965] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:02:19,145] {logging_mixin.py:115} INFO - [2023-07-24 09:02:19,124] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:02:19,147] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:02:19,264] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.340 seconds
+[2023-07-24 09:02:49,763] {processor.py:153} INFO - Started process (PID=181) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:02:49,770] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:02:49,785] {logging_mixin.py:115} INFO - [2023-07-24 09:02:49,780] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:02:55,951] {logging_mixin.py:115} INFO - [2023-07-24 09:02:54,934] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:02:55,959] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:02:56,453] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 6.721 seconds
+[2023-07-24 09:03:26,905] {processor.py:153} INFO - Started process (PID=204) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:03:26,909] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:03:26,912] {logging_mixin.py:115} INFO - [2023-07-24 09:03:26,912] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:03:28,181] {logging_mixin.py:115} INFO - [2023-07-24 09:03:28,161] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:03:28,184] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:03:28,297] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.404 seconds
+[2023-07-24 09:03:59,324] {processor.py:153} INFO - Started process (PID=227) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:03:59,328] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:03:59,332] {logging_mixin.py:115} INFO - [2023-07-24 09:03:59,332] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:04:02,214] {logging_mixin.py:115} INFO - [2023-07-24 09:04:02,190] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:04:02,218] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:04:02,366] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 3.057 seconds
+[2023-07-24 09:04:32,709] {processor.py:153} INFO - Started process (PID=251) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:04:32,718] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:04:32,734] {logging_mixin.py:115} INFO - [2023-07-24 09:04:32,734] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:04:35,196] {logging_mixin.py:115} INFO - [2023-07-24 09:04:35,164] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:04:35,200] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:04:35,351] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 2.713 seconds
+[2023-07-24 09:05:05,669] {processor.py:153} INFO - Started process (PID=264) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:05:05,672] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:05:05,676] {logging_mixin.py:115} INFO - [2023-07-24 09:05:05,676] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:05:07,072] {logging_mixin.py:115} INFO - [2023-07-24 09:05:07,064] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:05:07,075] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:05:07,128] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.476 seconds
+[2023-07-24 09:05:37,371] {processor.py:153} INFO - Started process (PID=284) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:05:37,376] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:05:37,386] {logging_mixin.py:115} INFO - [2023-07-24 09:05:37,384] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:05:38,179] {logging_mixin.py:115} INFO - [2023-07-24 09:05:38,171] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:05:38,181] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:05:38,247] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.894 seconds
+[2023-07-24 09:06:08,602] {processor.py:153} INFO - Started process (PID=305) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:06:08,605] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:06:08,609] {logging_mixin.py:115} INFO - [2023-07-24 09:06:08,609] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:06:09,374] {logging_mixin.py:115} INFO - [2023-07-24 09:06:09,365] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:06:09,376] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:06:09,455] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.867 seconds
+[2023-07-24 09:06:40,170] {processor.py:153} INFO - Started process (PID=327) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:06:40,175] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:06:40,179] {logging_mixin.py:115} INFO - [2023-07-24 09:06:40,179] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:06:40,892] {logging_mixin.py:115} INFO - [2023-07-24 09:06:40,886] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:06:40,896] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:06:40,971] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.818 seconds
+[2023-07-24 09:07:11,168] {processor.py:153} INFO - Started process (PID=349) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:07:11,170] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:07:11,174] {logging_mixin.py:115} INFO - [2023-07-24 09:07:11,173] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:07:12,224] {logging_mixin.py:115} INFO - [2023-07-24 09:07:12,201] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:07:12,230] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:07:12,317] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.160 seconds
+[2023-07-24 09:07:42,489] {processor.py:153} INFO - Started process (PID=371) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:07:42,497] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:07:42,501] {logging_mixin.py:115} INFO - [2023-07-24 09:07:42,501] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:07:43,600] {logging_mixin.py:115} INFO - [2023-07-24 09:07:43,595] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:07:43,603] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:07:43,660] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.187 seconds
+[2023-07-24 09:08:13,906] {processor.py:153} INFO - Started process (PID=394) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:08:13,916] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:08:13,923] {logging_mixin.py:115} INFO - [2023-07-24 09:08:13,922] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:08:15,581] {logging_mixin.py:115} INFO - [2023-07-24 09:08:15,572] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:08:15,586] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:08:15,662] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.773 seconds
+[2023-07-24 09:08:46,334] {processor.py:153} INFO - Started process (PID=424) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:08:46,350] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:08:46,373] {logging_mixin.py:115} INFO - [2023-07-24 09:08:46,373] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:08:49,328] {logging_mixin.py:115} INFO - [2023-07-24 09:08:49,319] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:08:49,331] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:08:49,588] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 3.306 seconds
+[2023-07-24 09:09:19,853] {processor.py:153} INFO - Started process (PID=448) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:09:19,855] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:09:19,860] {logging_mixin.py:115} INFO - [2023-07-24 09:09:19,859] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:09:20,641] {logging_mixin.py:115} INFO - [2023-07-24 09:09:20,635] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:09:20,643] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:09:20,774] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.930 seconds
+[2023-07-24 09:09:50,928] {processor.py:153} INFO - Started process (PID=469) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:09:50,931] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:09:50,935] {logging_mixin.py:115} INFO - [2023-07-24 09:09:50,935] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:09:51,725] {logging_mixin.py:115} INFO - [2023-07-24 09:09:51,719] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:09:51,726] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:09:51,797] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.877 seconds
+[2023-07-24 09:10:22,163] {processor.py:153} INFO - Started process (PID=492) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:10:22,170] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:10:22,182] {logging_mixin.py:115} INFO - [2023-07-24 09:10:22,181] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:10:24,232] {logging_mixin.py:115} INFO - [2023-07-24 09:10:24,227] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:10:24,235] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:10:24,292] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 2.173 seconds
+[2023-07-24 09:10:54,512] {processor.py:153} INFO - Started process (PID=513) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:10:54,515] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:10:54,519] {logging_mixin.py:115} INFO - [2023-07-24 09:10:54,519] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:10:55,934] {logging_mixin.py:115} INFO - [2023-07-24 09:10:55,925] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:10:55,939] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:10:56,129] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.634 seconds
+[2023-07-24 09:11:26,790] {processor.py:153} INFO - Started process (PID=534) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:11:26,793] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:11:26,795] {logging_mixin.py:115} INFO - [2023-07-24 09:11:26,795] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:11:27,612] {logging_mixin.py:115} INFO - [2023-07-24 09:11:27,594] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:11:27,615] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:11:27,720] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.940 seconds
+[2023-07-24 09:11:57,993] {processor.py:153} INFO - Started process (PID=555) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:11:58,004] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:11:58,006] {logging_mixin.py:115} INFO - [2023-07-24 09:11:58,006] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:11:59,015] {logging_mixin.py:115} INFO - [2023-07-24 09:11:59,004] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:11:59,031] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:11:59,103] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.128 seconds
+[2023-07-24 09:12:29,266] {processor.py:153} INFO - Started process (PID=577) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:12:29,274] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:12:29,284] {logging_mixin.py:115} INFO - [2023-07-24 09:12:29,284] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:12:30,303] {logging_mixin.py:115} INFO - [2023-07-24 09:12:30,298] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:12:30,305] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:12:30,373] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.123 seconds
+[2023-07-24 09:13:00,581] {processor.py:153} INFO - Started process (PID=598) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:13:00,592] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:13:00,597] {logging_mixin.py:115} INFO - [2023-07-24 09:13:00,596] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:13:01,398] {logging_mixin.py:115} INFO - [2023-07-24 09:13:01,392] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:13:01,399] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:13:01,470] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.923 seconds
+[2023-07-24 09:13:32,171] {processor.py:153} INFO - Started process (PID=631) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:13:32,178] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:13:32,182] {logging_mixin.py:115} INFO - [2023-07-24 09:13:32,182] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:13:33,036] {logging_mixin.py:115} INFO - [2023-07-24 09:13:33,024] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:13:33,041] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:13:33,115] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.965 seconds
+[2023-07-24 09:14:03,335] {processor.py:153} INFO - Started process (PID=652) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:14:03,341] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:14:03,346] {logging_mixin.py:115} INFO - [2023-07-24 09:14:03,346] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:14:04,036] {logging_mixin.py:115} INFO - [2023-07-24 09:14:04,030] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:14:04,037] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:14:04,090] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.772 seconds
+[2023-07-24 09:14:34,229] {processor.py:153} INFO - Started process (PID=675) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:14:34,233] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:14:34,237] {logging_mixin.py:115} INFO - [2023-07-24 09:14:34,237] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:14:34,942] {logging_mixin.py:115} INFO - [2023-07-24 09:14:34,936] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:14:34,943] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:14:34,994] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 0.774 seconds
+[2023-07-24 09:15:05,210] {processor.py:153} INFO - Started process (PID=696) to work on /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:15:05,215] {processor.py:641} INFO - Processing file /opt/airflow/dags/monitoring-dag.py for tasks to queue
+[2023-07-24 09:15:05,221] {logging_mixin.py:115} INFO - [2023-07-24 09:15:05,220] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:15:06,623] {logging_mixin.py:115} INFO - [2023-07-24 09:15:06,612] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/monitoring-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/monitoring-dag.py", line 12, in <module>
+    from evidently.dashboard import Dashboard
+ModuleNotFoundError: No module named 'evidently'
+[2023-07-24 09:15:06,628] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/monitoring-dag.py
+[2023-07-24 09:15:06,744] {processor.py:161} INFO - Processing /opt/airflow/dags/monitoring-dag.py took 1.542 seconds

@@ -1,0 +1,9 @@
+docker run -it \
+ -v "$(pwd):/home/app" \
+ -p 8501:8501 \
+ -e PORT=8501 \
+ -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+ -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+ -e BACKEND_STORE_URI=$BACKEND_STORE_URI \
+ -e ARTIFACT_ROOT=$ARTIFACT_ROOT \
+ wakeup_streamlit
