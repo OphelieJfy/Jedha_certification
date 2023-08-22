@@ -4,6 +4,15 @@
 
 This project is the project submitted for the validation of block 3 of my Designer Developer certification in data science following my training at Jedha
 
+## Deliverables
+
+Notebook with:
+- descriptive statistics
+- visualizations
+- explanations on why people are attracted to each other and can agree to a second data
+
+A 10 minutes project presentation video : 
+
 ## Project context and objective
 
 The marketing team of Tinder observes a decrease in the number of matches among its users.

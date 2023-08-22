@@ -1,0 +1,13 @@
+argparse
+boto3
+confluent_kafka
+datetime
+json
+mlflow
+numpy
+pandas
+pickle
+requests
+sys
+time
+uuid

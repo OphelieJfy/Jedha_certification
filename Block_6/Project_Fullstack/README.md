@@ -4,6 +4,14 @@
 
 This project is the project submitted for the validation of block 6 of my Designer Developer certification in data science following my training at Jedha
 
+## Deliverables
+
+DemoDay video presentation : 
+
+Personal video presentation : 
+
+Powerpoint presentation : 
+
 ## Project context and objective
 
 This project was carried out in the context of the final Bootcamp Fullstack project proposed by Jedha, in a team with the following people: Olivier Tardella, Yann Van Isacker and Thibaut Gallice.
@@ -19,7 +27,11 @@ The dataset used to train the Machine Learning model is available  [here on Kagg
 
 ## Usage
 
-Model's training was performed on Google Collab (GPU usage). Data were stored in a 'data' folder.
+The source code is written in Python 3.
+To locally run the app and API, you need Docker and Heroku to be installed.
+
+Data were stored in a 'data' folder.
+Model's training was performed on Google Collab (GPU usage). 
 
 The MLFlow server was deployed online through the use of Heroku services.
 
