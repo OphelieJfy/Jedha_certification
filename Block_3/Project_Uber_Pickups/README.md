@@ -24,4 +24,6 @@ The project (as well as the notebook) is constructed as followed:
 
 ## Dataset
 
-The dataset being too heavy to be loaded on Git, it can be downloaded directly [here](https://full-stack-bigdata-datasets.s3.eu-west-3.amazonaws.com/Machine+Learning+non+Supervis%C3%A9/Projects/uber-trip-data.zip).
+The complete dataset being too heavy to be loaded on Git, it can be downloaded directly [here](https://full-stack-bigdata-datasets.s3.eu-west-3.amazonaws.com/Machine+Learning+non+Supervis%C3%A9/Projects/uber-trip-data.zip).
+
+However, the month of September used in this analysis is available in the data folder.
