@@ -6,7 +6,7 @@ This project is the project submitted for the validation of block 6 of my Design
 
 ## Deliverables
 
-DemoDay video presentation : 
+DemoDay video presentation : https://www.youtube.com/watch?v=5qngzP4DGGU&t=2867s (from minute 48)
 
 Personal video presentation : 
 
