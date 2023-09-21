@@ -1,0 +1,15 @@
+uvicorn[standard]
+gunicorn
+boto3
+pandas
+numpy
+pydantic==1.10
+fastapi
+mlflow
+cloudpickle
+scikit-learn
+typing
+openpyxl
+python-multipart
+fsspec
+s3fs

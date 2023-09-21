@@ -1,0 +1,7 @@
+numpy
+openpyxl
+pandas
+plotly
+requests
+streamlit >= 1.10.0
+streamlit_option_menu
