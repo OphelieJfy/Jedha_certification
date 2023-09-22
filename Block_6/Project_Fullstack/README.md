@@ -6,11 +6,11 @@ This project is the project submitted for the validation of block 6 of my Design
 
 ## Deliverables
 
-DemoDay video presentation : https://www.youtube.com/watch?v=5qngzP4DGGU&t=2867s (from minute 48)
+- DemoDay video presentation : https://www.youtube.com/watch?v=5qngzP4DGGU&t=2867s (from minute 48)
 
-Personal video presentation : 
+- My personal [video](https://share.vidyard.com/watch/VuVxhTMgpmh6wa3aZeG31K?) presentation
 
-Powerpoint presentation : 
+- the Powerpoint presentation in this repository : Slides_presentation.pptx
 
 ## Project context and objective
 
