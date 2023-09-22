@@ -13,7 +13,7 @@ A notebook with :
 
 The leaderboard with scores.
 
-A 10 minutes project [presentation video(https://share.vidyard.com/watch/JQuwz8gEFRPXtMSKVWApSE?).]
+A 10 minutes project [presentation video](https://share.vidyard.com/watch/JQuwz8gEFRPXtMSKVWApSE?).
 
 ## Project context and objective
 
