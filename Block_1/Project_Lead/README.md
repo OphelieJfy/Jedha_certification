@@ -6,7 +6,7 @@ This project is the project submitted for the validation of block 1 of my Design
 
 ## Deliverables
 
-- [My personnal video presentation](https://share.vidyard.com/watch/gYhBVoXgCKTEZP7AfmWMyQ?)
+- [My personnal video presentation](https://share.vidyard.com/watch/vvrnc8wYVmwzzs29F4rWHD?)
 
 - The support presentation in this repository: Slides_presentation.pptx
 
