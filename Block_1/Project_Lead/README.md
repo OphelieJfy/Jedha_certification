@@ -6,9 +6,9 @@ This project is the project submitted for the validation of block 1 of my Design
 
 ## Deliverables
 
-Personal video presentation : 
+- [My personnal video presentation](https://share.vidyard.com/watch/gYhBVoXgCKTEZP7AfmWMyQ?)
 
-Powerpoint presentation : 
+- The support presentation in this repository: Slides_presentation.pptx
 
 ## Project context and objective
 
