@@ -11,7 +11,7 @@ Notebook with:
 - visualizations
 - explanations on why people are attracted to each other and can agree to a second data
 
-A 10 minutes project presentation video : 
+A 10 minutes project [presentation video](https://share.vidyard.com/watch/KWB4jQPNjReFHZVwGCN1xg?)
 
 ## Project context and objective
 
