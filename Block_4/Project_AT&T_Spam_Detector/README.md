@@ -10,7 +10,7 @@ A notebook with :
 - exploratory data analysis and visualizations
 - preprocessings, embedding model and transfer learning model
 
-A 10 minutes project presentation video : 
+A 10 minutes project [presentation video](https://share.vidyard.com/watch/81TtbfGuE4nqtX3DXQqsgE?)
 
 ## Project context and objective
 
@@ -18,7 +18,7 @@ One of the main pain point that AT\&T users are facing is constant exposure to S
 
 AT\&T has been able to manually flag spam messages for a time, but they are looking for an automated way of detecting spams to protect their users.
 
-The pbjective is to build a spam detector, that can automatically flag spams as they come based sollely on the sms' content.
+The objective is to build a spam detector, that can automatically flag spams as they come based sollely on the sms' content.
 
 ## Dataset
 
