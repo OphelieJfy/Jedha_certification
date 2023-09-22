@@ -17,7 +17,7 @@ In complement of this video and the code provided here, you'll find :
 
 The goal of this project is to develop and deploy several online apps for: data analysis, machine learning training, and predictions for GetAround.
 
-For this project, you'll find several repository:
+For this project, you'll find several repositories:
 - a data repository containing the two datasets used in this project,
 - an EDA repository with two notebooks containing the explorayory data analysis for each of the two datasets,
 - a ML repository containing the MLFlow tracking server configuration and the machine learning training notebook,
