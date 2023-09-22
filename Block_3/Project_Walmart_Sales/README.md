@@ -11,7 +11,7 @@ A notebook with :
 - preprocessings, baseline model and regularized models
 - performance assesment and interpretations
 
-A 10 minutes project presentation video : 
+A 10 minutes project [presentation video](https://share.vidyard.com/watch/thhquKmhZn6sX1EnUHxmHV?).
 
 ## Project context and objective
 

@@ -10,7 +10,7 @@ A notebook with exploratory data analysis, preprocessings and two unsupervised a
 
 Two html pages (in figures folder) to visualize the results of the two unsupervised clustering algorithms.
 
-A 10 minutes project presentation video : 
+A 10 minutes project [presentation video](https://share.vidyard.com/watch/C6szU5AJy4jqRWDzdr4ZVU?).
 
 ## Project context and objective
 
