@@ -6,7 +6,7 @@ This project is the project submitted for the validation of block 5 of my Design
 
 ## Deliverables
 
-Personal video presentation : 
+A 10min personal [video presentation](https://share.vidyard.com/watch/PiwVqc3zvxWQFksdHREhnd?)
 
 In complement of this video and the code provided here, you'll find :
 - A web dashboard for delay analysis and simulation, as well as for daily rental price estimation : https://ojo-getaround-streamlit-188f61c1d4a6.herokuapp.com/
